@@ -1,3 +1,4 @@
+const lista = document.querySelector(".personajes")
 const url = "https://swapi.dev/api/people";
 fetch(url)
     .then(datos => datos.json())
@@ -6,6 +7,8 @@ fetch(url)
 function mostrarDatos(info) {
     info.forEach(persona => {
         const { name } = persona;
-        console.log(name)
+        const p = document.createElement("P");
+        p.textContent = name
+        lista.appendChild(p);
     });
 }

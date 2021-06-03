@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+
+.personajes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
